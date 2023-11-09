@@ -1,0 +1,154 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;600&family=Source+Sans+3&display=swap');
+
+
+body {
+    background-color: black;
+}
+
+header > nav {
+    font-family: 'Roboto Condensed';
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding-right: 50px;
+}
+
+.nav-signin {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding-right: 5px;
+}
+
+.nav-signup {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding-left: 1px; 
+}
+
+h1 {
+    font-family: 'Roboto Condensed';
+    color: white;
+    margin-left: 1rem;
+}
+
+p{
+    font-family: 'Source Sans 3';
+    color: white;
+    margin-left: 1rem;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+form li + li {
+    margin-top: 1em;
+  }
+
+/* .signup-form {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    padding: 1rem;
+    
+} */
+
+.input {
+    padding: 1rem;
+    border-radius: 20px;
+    justify-content: space-around;
+
+}
+.checkbox-label {
+    font-family: 'Source Sans 3';
+    color: white;
+}
+.send-form-button {
+    align-self: center;
+    border-radius: 20px;
+    padding: 1rem;
+    width: 150px;
+    color: white;
+    font-family: 'Roboto Condensed';
+    font-weight: 600;
+    font-size: larger;
+    background-color: #5654F0;
+}
+
+footer {
+    font-family: 'Source Sans 3';
+    
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.footer-link {
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        padding-right: 50px;
+    
+}
+
+@media (width < 800px) {
+    .nav-link {
+    display: none;
+}
+.nav-signin {
+    display: none;
+}
+.nav-signup {
+    display: none;
+}
+.title {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    align-self:first baseline;
+}
+p {
+    align-self: first baseline;
+}
+.checkbox-label {
+    display: flex;
+}
+}

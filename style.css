@@ -1,0 +1,333 @@
+
+body{
+    margin:0;
+    padding:0;
+    background-color: black;
+    overflow-x: hidden;
+}
+.header{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+   justify-content: center;
+  
+}
+.header5{
+   box-shadow: 0px 5px 5px -5px rgba(255, 255, 255, 0.5); 
+}
+.header ul{
+display: flex;
+
+
+}
+.header ul li{
+    justify-content: space-around;
+}
+.luna, .jupiter, .marte{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+@keyframes show{
+    from{
+        opacity: 0;
+        scale: 90%;
+    }
+    to{
+        opacity: 1;
+        scale:100%;
+    }
+
+}
+
+
+i{
+    color: white;
+    margin-right: 6rem;
+    margin-top: -3rem;
+
+}
+
+
+.ext, .contenedor{
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+    animation-timeline: --image;
+    animation-name: show;
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode:both;
+}
+
+.seccion3 .ext{
+    width: 40%;
+    margin-left: 1350px;
+ 
+}
+.seccion2 .ext{
+    width: 30%;
+    margin-left: 1350px;
+    
+}
+.seccion4 .ext{
+    width: 34%;
+    margin-left: 1350px;
+}
+.tierra{
+    margin-top: 5rem;
+    position: fixed;
+    bottom: -20rem;
+    
+}
+
+.seccion2{
+    padding-top: 40%;
+}
+
+
+.marte{
+    width: 110%;
+}
+.contenedor{
+    margin-left: 1000px;
+
+    padding: 2rem;
+    color: white;
+    position:absolute;
+    margin-left: 55rem;
+    margin-top: 25rem;
+    
+   
+    
+}
+.contenedor a{
+  color: white;
+    /* background-color: rgb(210, 210, 210, 0.7); */
+  
+}
+.luna{
+    margin-left: 5rem;
+   
+}
+.jupiter{
+    margin-left:2rem;
+}
+.lunaG{
+    display: flex;
+    width: 50rem;
+    justify-content: flex-end;
+}
+.ext2{
+    display: none;
+}
+header i{
+    visibility: hidden;
+}
+/* Estilos generales para dispositivos móviles */
+@media screen and (max-width: 768px) {
+
+    body {
+        background-color: black;
+        overflow-x: hidden;
+        padding: 0;
+        margin: 0;
+       
+    }
+    i{
+        visibility: visible;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header ul {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .header ul li{
+        display: none;
+    }
+
+    .luna, .jupiter, .marte {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+
+    }
+
+    .ext, .contenedor {
+        view-timeline-name: --image;
+        view-timeline-axis: block;
+        animation-timeline: --image;
+        animation-name: show;
+        animation-range: entry 25% cover 50%;
+        animation-fill-mode: both;
+    }
+
+    .seccion3 .ext, .seccion2 .ext, .seccion4 .ext {
+        width: 100%;
+        margin-left: 0;
+       
+    }
+
+    .tierra {
+        margin-top: 2rem;
+        position: static;
+        display: none;
+    }
+
+    .seccion2 {
+        padding-top: 20%;
+    }
+
+    .marte {
+        width: 100%;
+    }
+
+    .contenedor {
+        margin: 2rem;
+     
+        padding: 1rem;
+        color: white;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contenedor a {
+      
+  
+        color:white
+
+    }
+
+    .luna {
+        margin-left: 0;
+    }
+
+    .jupiter {
+        margin-left: 0;
+       
+    }
+
+    .lunaG {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    
+    }
+/* .tierra img{
+    width: 400px;
+} */
+.ext{
+    display: none;
+}
+.ext2{
+    display: block;
+    z-index: 0;
+}
+.luna .ext2{
+    width: 117%;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5)), url('tu-imagen.jpg');
+    background-size: cover;
+
+}
+.marte .ext2{
+    width: 100%;
+}
+.jupiter .ext2{
+    width: 100%;
+}
+.contenedor{
+  /* display: flex; */
+    position: absolute;
+    z-index: 1;
+    /* margin: auto; */
+ 
+}
+.seccion4,.seccion3,.seccion2{
+    display:flex ;
+    justify-content: center;
+    text-align: center;
+ 
+}
+.seccion2 .contenedor{
+    margin-top: 11rem;
+} 
+.seccion3 .contenedor{
+    margin-top: 9rem;
+}
+.seccion4 .contenedor{
+    margin-top: 9rem;
+
+}
+li{
+    display: none;
+}
+}
+header ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+header ul li{
+    margin: 1rem;
+   margin-top: -3rem;
+}
+header{
+    background-color: black;
+    height: 3rem;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+   top: 0;
+   padding-bottom: 0.5rem;
+}
+header img{
+    margin-top: 0.7rem;
+}
+header ul li{
+    list-style: none;
+    color: white;
+    margin-top: -4rem;
+}
+.contenedor a{
+     font-size: xxx-large;
+    text-decoration:none;
+    border-radius: 50%;
+    padding: 0.8rem;
+}
+a{
+    text-decoration:none;
+}
+.lunaxd{
+    position: relative;
+}
+.lunaxd img{
+    position: absolute;
+    right:-14rem;
+    top: -40rem;
+    width: 60%;
+    
+}
+.form1{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    margin-top:20rem ;
+   position: relative;
+}
+.form1 image{
+    position: absolute;
+    margin-top:20rem ;
+    
+}
